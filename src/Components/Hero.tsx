@@ -22,7 +22,7 @@ const Hero = () => {
   };
   return (
     <div>
-      <div className="absolute min-h-[100vh] w-full bg-gradient-to-t from-[#1e2126] via-transparent to-transparent"></div>
+      <div className="absolute h-[100vh] w-full bg-gradient-to-t from-[#1e2126] via-transparent to-transparent"></div>
       <div className="absolute mt-[400px] px-10 md:mt-[350px] md:px-24">
         <h2 className="text-[19px] text-white lg:text-[27px]">
           Watch movies on HULU
@@ -44,7 +44,7 @@ const Hero = () => {
         src={`${IMAGE_BASE_URL}${movieList.backdrop_path}`}
         width={1920}
         height={1080}
-        className="min-h-[100vh] object-cover"
+        className="h-[100vh] object-cover object-left-top"
       />
     </div>
   );
