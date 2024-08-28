@@ -1,4 +1,3 @@
-import React from "react";
 import GenresList from "../Constant/GenresList";
 import { IoIosArrowForward } from "react-icons/io";
 import MovieList from "./MovieList";

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import GlobalApi from "../Services/GlobalApi";
 import MovieCard from "./MovieCard";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
@@ -13,7 +13,6 @@ const MovieList = (genreId: any) => {
 
   const getMovieListByGenreId = () => {
     GlobalApi.getMovieByGenreId(genreId.genreId).then((res: any) => {
-      console.log(res.data.results);
       setMovieList(res.data.results);
     });
   };
