@@ -9,7 +9,7 @@ const MovieCard = (movie: any) => {
       <h2 className="mt-2 text-[12px] font-bold text-gray-400 group-hover:font-bold md:text-[17px]">
         {movie.movie.id % 2 == 0 ? "WATCH MOVIE" : "START WATCHING"}
       </h2>
-      <h2 className="mt-1 max-w-[340px] overflow-hidden text-white transition-all group-hover:font-bold md:text-[22px]">
+      <h2 className="mt-1 h-[60px] max-w-[340px] overflow-hidden text-wrap text-white transition-all group-hover:font-bold md:text-[22px]">
         {movie.movie.original_title}
       </h2>
     </div>
